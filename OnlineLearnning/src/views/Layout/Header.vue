@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gray-500 p-4">
+    <div class="bg-gray-500 p-4 custom-toolbar">
         <div class="fix-container">
             <div class="flex align-items-center justify-content-between">
 
@@ -43,3 +43,24 @@
 <script setup>
  
 </script>
+
+<style scoped>
+    .custom-toolbar {
+  position: fixed !important;
+  
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  z-index: 50 !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.custom-toolbar :deep(.p-toolbar) {
+  position: fixed !important;
+  
+  left: 0;
+  right: 0;
+  width: 100%;
+  
+}
+</style>

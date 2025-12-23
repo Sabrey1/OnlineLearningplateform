@@ -1,6 +1,6 @@
 <template>
-    <div class="surface-700" style="height: 91vh;">
-        <div class="fix-container ">
+    <div class="surface-700" style="height: 100vh; padding-top: 100px;">
+        <div class="fix-container  ">
             <div class="grid">
                 <div class="col">
                     <div class="text-5xl line-height-1 border-round-sm text-white">

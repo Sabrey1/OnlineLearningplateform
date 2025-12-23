@@ -1,5 +1,5 @@
 <template>
-    <div class="surface-800 mt-5">
+    <div class="surface-800">
         <div class="fix-container">
            <div class="grid">
                 <div class="col">
