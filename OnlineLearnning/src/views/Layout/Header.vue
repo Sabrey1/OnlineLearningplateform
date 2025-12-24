@@ -28,7 +28,10 @@
                 </div>
                 <!-- RIGHT -->
                 <div class="flex justify-content-end gap-1">
-                    <Button label="Sign In" text />
+                    <RouterLink to="/login">
+                        <Button label="Sign In" text />
+                    </RouterLink>
+                    
                     <Button label="Start Learning" />
                 </div>
             </div>
