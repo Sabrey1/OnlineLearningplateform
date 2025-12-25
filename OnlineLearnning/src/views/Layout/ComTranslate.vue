@@ -1,10 +1,8 @@
 <template>
-  <select v-model="currentLang" @change="changeLang(currentLang)">
+  <select v-model="currentLang" @change="changeLang(currentLang)" class="border-round">
     <option value="en">English</option>
     <option value="kh">Khmer</option>
   </select>
-
-  <p>{{ t('hello') }}</p>
 </template>
 
 <script setup>

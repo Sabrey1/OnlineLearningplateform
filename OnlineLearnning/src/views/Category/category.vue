@@ -1,7 +1,7 @@
 <template>
     <div class="fix-container">
         <div class="text-center mt-8">
-            <p class="m-0 text-blue-400 text-xl">Categories</p>
+            <p class="m-0 text-blue-400 text-xl">{{t("Categories")}}</p>
             <h1 class="m-0">Explore by <span class="text-blue-500">Category</span> </h1>
             <p class="m-0">Discover courses across diverse topics and find the perfect path for your<br> learning journey</p>
         </div>
@@ -69,6 +69,7 @@
 
 <script setup>
 import Card from 'primevue/card';
+const t = window.t
 </script>
 
 <style scoped>
