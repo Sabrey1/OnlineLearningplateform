@@ -33,6 +33,7 @@
                     </RouterLink>
                     
                     <Button label="Start Learning" icon="pi pi-sparkles" />
+                    <ComTranslate />
                 </div>
             </div>
         </div>
@@ -40,6 +41,7 @@
 </template>
 
 <script setup>
+    import ComTranslate from '@/views/Layout/ComTranslate.vue'
 </script>
 
 <style scoped>
