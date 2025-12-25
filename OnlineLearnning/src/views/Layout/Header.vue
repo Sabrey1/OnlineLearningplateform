@@ -32,7 +32,7 @@
                         <Button label="Sign In" text />
                     </RouterLink>
                     
-                    <Button label="Start Learning" />
+                    <Button label="Start Learning" icon="pi pi-sparkles" />
                 </div>
             </div>
         </div>
