@@ -45,7 +45,7 @@
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col flex align-items-center h-screen">
             <Card>
                 <template #header>
                     <h2 class="m-0">Login</h2>
