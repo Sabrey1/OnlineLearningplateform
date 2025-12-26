@@ -12,7 +12,8 @@ class CoursesController extends Controller
      */
     public function index()
     {
-        //
+        $courses = Courses::all();
+        return response()->json($courses);
     }
 
     /**

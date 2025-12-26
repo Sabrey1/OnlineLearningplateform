@@ -12,7 +12,8 @@ class EnrollmentController extends Controller
      */
     public function index()
     {
-        //
+        $enrollments = Enrollments::all();
+        return response()->json($enrollments);
     }
 
     /**

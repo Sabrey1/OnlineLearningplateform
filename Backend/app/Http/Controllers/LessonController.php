@@ -12,7 +12,8 @@ class LessonController extends Controller
      */
     public function index()
     {
-        //
+        $lessons = Lessons::all();
+        return response()->json($lessons);
     }
 
     /**

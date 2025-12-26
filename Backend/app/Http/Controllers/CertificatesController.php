@@ -12,7 +12,8 @@ class CertificatesController extends Controller
      */
     public function index()
     {
-        //
+        $certificates = Certificates::all();
+        return response()->json($certificates);
     }
 
     /**
