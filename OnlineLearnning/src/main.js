@@ -6,6 +6,7 @@ import Aura from '@primeuix/themes/aura';
 import router from '@/router/router.js'
 import 'primeicons/primeicons.css'
 import Button from "primevue/button"
+import "/node_modules/primeflex/primeflex.css"
 import i18n from './i18n'
 const app =createApp(App)
 app.use(router)
