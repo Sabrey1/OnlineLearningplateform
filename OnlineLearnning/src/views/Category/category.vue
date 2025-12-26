@@ -1,5 +1,6 @@
 <template>
     <div class="fix-container">
+        {{ categories }}
         <div class="text-center mt-8">
             <p class="m-0 text-blue-400 text-xl">{{t("Categories")}}</p>
             <h1 class="m-0">Explore by <span class="text-blue-500">Category</span> </h1>
@@ -69,6 +70,9 @@
 
 <script setup>
 import Card from 'primevue/card';
+import{ useCategory } from '@/Hook/category.js'
+const { categories } = useCategory()
+
 const t = window.t
 </script>
 
