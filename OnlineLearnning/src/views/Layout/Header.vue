@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gray-500 p-4 custom-toolbar">
+    <div class="bg-gray-500 p-2 custom-toolbar">
         <div class="fix-container">
             <div class="flex align-items-center justify-content-between">
                 <!-- LEFT -->

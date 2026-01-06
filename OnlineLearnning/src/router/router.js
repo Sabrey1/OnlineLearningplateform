@@ -5,6 +5,7 @@ import Login from '@/views/Auth/Login.vue'
 import Register from '@/views/Auth/Register.vue'
 import CategoryList from '@/views/Category/CategoryList.vue'
 import CourseList from '@/views/Course/CourseList.vue'
+import ComCourseDetail from '@/views/Course/components/ComCourseDetail.vue'
 
 const routes = [
   //{
@@ -42,6 +43,11 @@ const routes = [
     path: '/course',
     name: 'CourseList',
      component: CourseList,
+  },
+  {
+    path: '/course-detail/:id',
+    name: 'ComCourseDetail',
+     component: ComCourseDetail,
   },
   //  {
   //   path: '/login',

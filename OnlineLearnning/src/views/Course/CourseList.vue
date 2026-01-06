@@ -3,7 +3,7 @@
     <div class=" pb-8 bg-red-500">
         <Header/>
     </div>
-    <div class="fix-container pt-7">
+    <div class="fix-container pt-5">
         <div class="text-center">
             <h1>Explore Our Courses</h1>
             <p>Discover world-class courses taught by industry experts.<br> Start your learning journey today.</p>
@@ -18,6 +18,12 @@
                     style="border: none; outline: none;"
                 />
             </IconField>
+        </div>
+
+        <div class="mt-7">
+            <div>
+                filter 
+            </div>
         </div>
 
         {{ courses }}

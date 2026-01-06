@@ -81,7 +81,7 @@
                     <hr>
                     <div class="flex align-item-center justify-content-between">
                         <p class="text-2xl m-0 font-bold">${{ course.price }} <span class="text-lg"><s>$199.99</s></span></p>
-                        <Button label="Enroll Now"></Button>
+                        <Button @click="gotoDetail" label="Enroll Now"></Button>
                     </div>
                 </template>
             </Card>  
@@ -96,5 +96,10 @@ import {useCourse} from '@/Hook/useCourse.js'
 const {
     courses
 } = useCourse()
+
+function gotoDetail(id){
+    
+    window.location.href = '/course-detail' + 'id'
+}
 
 </script>
