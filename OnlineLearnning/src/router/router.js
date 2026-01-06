@@ -3,6 +3,8 @@ import NotFound from '@/views/NotFound.vue'
 import Homepage from '@/views/MainPage/Homepage.vue'
 import Login from '@/views/Auth/Login.vue'
 import Register from '@/views/Auth/Register.vue'
+import CategoryList from '@/views/Category/CategoryList.vue'
+import CourseList from '@/views/Course/CourseList.vue'
 
 const routes = [
   //{
@@ -30,6 +32,16 @@ const routes = [
     path: '/register',
     name: 'Register',
      component: Register,
+  },
+  {
+    path: '/category',
+    name: 'CategoryList',
+     component: CategoryList,
+  },
+  {
+    path: '/course',
+    name: 'CourseList',
+     component: CourseList,
   },
   //  {
   //   path: '/login',

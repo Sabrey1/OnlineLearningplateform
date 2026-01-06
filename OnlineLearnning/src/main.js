@@ -8,6 +8,9 @@ import 'primeicons/primeicons.css'
 import Button from "primevue/button"
 import "/node_modules/primeflex/primeflex.css"
 import i18n from './i18n'
+
+import Header from '@/views/Layout/Header.vue'
+
 const app =createApp(App)
 app.use(router)
 app.use(PrimeVue, {
@@ -20,4 +23,5 @@ app.use(i18n)
 window.t = (key) => i18n.global.t(key)
 
 app.component('Button', Button);
+app.component('Header', Header);
 app.mount('#app')

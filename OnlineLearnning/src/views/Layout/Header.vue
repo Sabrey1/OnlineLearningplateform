@@ -13,16 +13,25 @@
                 <div class="flex-1 flex justify-content-center">
                     <ul class="flex gap-5 text-xl list-none m-0 p-0 text-white">
                         <li>
-                            <a href="#" class="no-underline text-white">Courses</a>
+                            <RouterLink  to="/" class="no-underline">
+                                <p class="no-underline text-white">Home</p>
+                            </RouterLink>
                         </li>
                         <li>
-                            <a href="#" class="no-underline text-white">Categories</a>
+                              <RouterLink  to="/course" class="no-underline text-white">
+                                <p class="no-underline text-white">Courses</p>
+                              </RouterLink>
                         </li>
                         <li>
-                            <a href="#" class="no-underline text-white">Instructors</a>
+                            <RouterLink  to="/category" class="no-underline text-white">
+                                <p class="no-underline text-white">Categories</p>
+                            </RouterLink>
                         </li>
+                         
                         <li>
-                            <a href="#" class="no-underline text-white">Pricing</a>
+                            <RouterLink  to="/blog" class="no-underline text-white">
+                                <p class="no-underline text-white">Contact</p>
+                            </RouterLink>
                         </li>
                     </ul>
                 </div>
