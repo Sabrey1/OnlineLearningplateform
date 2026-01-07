@@ -14,7 +14,12 @@
                     <ul class="flex gap-5 text-xl list-none m-0 p-0 text-white">
                         <li>
                             <RouterLink  to="/" class="no-underline">
-                                <p class="no-underline text-white">Home</p>
+                                <p class="no-underline text-white">{{t("Home")}}</p>
+                            </RouterLink>
+                        </li>
+                        <li>
+                            <RouterLink  to="/category" class="no-underline text-white">
+                                <p class="no-underline text-white">{{t("Categories")}}</p>
                             </RouterLink>
                         </li>
                         <li>
@@ -23,13 +28,7 @@
                               </RouterLink>
                         </li>
                         <li>
-                            <RouterLink  to="/category" class="no-underline text-white">
-                                <p class="no-underline text-white">Categories</p>
-                            </RouterLink>
-                        </li>
-                         
-                        <li>
-                            <RouterLink  to="/blog" class="no-underline text-white">
+                            <RouterLink  to="/contact" class="no-underline text-white">
                                 <p class="no-underline text-white">Contact</p>
                             </RouterLink>
                         </li>
@@ -51,6 +50,8 @@
 
 <script setup>
     import ComTranslate from '@/views/Layout/ComTranslate.vue'
+
+    const t = window.t
 </script>
 
 <style scoped>

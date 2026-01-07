@@ -6,6 +6,8 @@ import Register from '@/views/Auth/Register.vue'
 import CategoryList from '@/views/Category/CategoryList.vue'
 import CourseList from '@/views/Course/CourseList.vue'
 import ComCourseDetail from '@/views/Course/components/ComCourseDetail.vue'
+import Contact from '@/views/ContactUS/contact.vue'
+
 
 const routes = [
   //{
@@ -38,6 +40,11 @@ const routes = [
     path: '/category',
     name: 'CategoryList',
      component: CategoryList,
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+     component: Contact,
   },
   {
     path: '/course',

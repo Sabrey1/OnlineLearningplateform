@@ -10,7 +10,7 @@ import "/node_modules/primeflex/primeflex.css"
 import i18n from './i18n'
 
 import Header from '@/views/Layout/Header.vue'
-
+import Footer from '@/views/Layout/Footer.vue'
 const app =createApp(App)
 app.use(router)
 app.use(PrimeVue, {
@@ -24,4 +24,5 @@ window.t = (key) => i18n.global.t(key)
 
 app.component('Button', Button);
 app.component('Header', Header);
+app.component('Footer', Footer);
 app.mount('#app')
