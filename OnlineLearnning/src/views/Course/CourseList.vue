@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div class=" pb-8 bg-red-500">
+    <div class=" pb-8 ">
         <Header/>
     </div>
     <div class="fix-container pt-5">

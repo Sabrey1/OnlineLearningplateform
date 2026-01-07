@@ -55,6 +55,7 @@ const routes = [
     path: '/course-detail/:id',
     name: 'ComCourseDetail',
      component: ComCourseDetail,
+     props: true
   },
   //  {
   //   path: '/login',
