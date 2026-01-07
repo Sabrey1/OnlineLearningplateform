@@ -12,18 +12,18 @@
         </div>
         <Chip>{{ course.category_id }}</Chip>
         <h1 class="m-0">Course Title: {{ course.title }}</h1>
-        <p class="m-0">Description: {{ course.description }}</p>
+        <p class=" ">Description: {{ course.description }}</p>
         <div class="flex gap-5" >
             <div>
                 <div class="flex align-item-center gap-2">
                     <i class="pi pi-star-fill text-yellow-400 mt-1"></i>
-                        <p class="m-0">4.9(2,840 reviews)</p>
+                    <p class="m-0">4.9(2,840 reviews)</p>
                 </div>
             </div>
             <div>
                 <div class="flex align-item-center gap-2">
                     <i class="pi pi-users text-yellow-400 mt-1"></i>
-                        <p class="m-0">15,420 students</p>
+                    <p class="m-0">15,420 students</p>
                 </div>
             </div>                  
         </div>
@@ -40,30 +40,30 @@
             <div>
                 <div class="flex align-item-center gap-2">
                     <i class="pi pi-clock mt-1"></i>
-                        <p class="m-0">42 hours</p>
+                    <p class="m-0">42 hours</p>
                 </div>
             </div>
             <div>
                 <div class="flex align-item-center gap-2">
                     <i class="pi pi-play-circle mt-1"></i>
-                        <p class="m-0">156 lessons</p>
+                    <p class="m-0">156 lessons</p>
                 </div>
             </div>                  
             <div>
                 <div class="flex align-item-center gap-2">
                     <i class="pi pi-globe mt-1"></i>
-                        <p class="m-0">English</p>
+                    <p class="m-0">English</p>
                 </div>
             </div>                  
             <div>
                 <div class="flex align-item-center gap-2">
                     <i class="pi pi-trophy mt-1"></i>
-                        <p class="m-0">Beginner</p>
+                    <p class="m-0">Beginner</p>
                 </div>
             </div>                  
         </div> 
         
-        <div class="">
+        <div class="mt-8">
             <h2>What you'll learn</h2>
             <Card>
                 <template #content>
@@ -156,18 +156,39 @@
 
             </div>
         <div class="col flex justify-content-center mt-8">
-            <Card style="width: 400px; height: 500px;">
-                <template #header>
-                    <img 
+            <Card style="width: 400px; height:630px;">
+                <template #content>
+                     <img 
                     src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=400&fit=crop" 
                     alt="course thumbnail" 
                     style="width:100%; height:200px; object-fit:cover; border-radius:4px 4px 0 0;"
                     />
-                </template>
+                    <h3 class="text-lg font-bold mb-2">$89.99 <s>$199.99</s></h3>
+                    
+                    <Button class="w-full" label="Enroll Now"></Button>
+                    <Button class="w-full mt-2" label="Add to Cart"></Button>
 
-                <template #content>
-                    <h3 class="text-lg font-bold mb-2">Course Title</h3>
-                    <p>Some description here</p>
+                    <div>
+                        <p class="text-center">30-Day Money-Back Guarantee</p>
+                        <hr>
+                        <h4 class="m-2">This course includes:</h4>
+                        <div class="flex gap-2 align-items-center">
+                            <icon class="pi pi-play-circle"></icon>
+                            <p class="m-1">42 hours on-demand video</p>
+                        </div>
+                        <div class="flex gap-2 align-items-center">
+                            <icon class="pi pi-file"></icon>
+                            <p class="m-1">156 lessons</p>
+                        </div>
+                        <div class="flex gap-2 align-items-center">
+                            <icon class="pi pi-download"></icon>
+                            <p class="m-1">Downloadable resources</p>
+                        </div>
+                        <div class="flex gap-2 align-items-center">
+                            <icon class="pi pi-trophy"></icon>
+                            <p class="m-1">Certificate of completion</p>
+                        </div>
+                    </div>
                 </template>
             </Card>
         </div>

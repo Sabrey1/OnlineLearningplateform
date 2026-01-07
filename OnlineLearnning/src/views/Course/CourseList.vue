@@ -70,7 +70,7 @@
                     <hr>
                     <div class="flex align-item-center justify-content-between">
                         <p class="text-2xl m-0 font-bold">${{ course.price }} <span class="text-lg"><s>$199.99</s></span></p>
-                        <Button @click="gotoDetail" label="Enroll Now"></Button>
+                        <Button @click="gotoDetail(course.id)" label="Enroll Now"></Button>
                     </div>
                 </template>
             </Card>  
@@ -91,6 +91,14 @@ import InputIcon from 'primevue/inputicon';
 import InputText from 'primevue/inputtext';
 import Card from 'primevue/card';
 import {useCourse} from '@/Hook/useCourse.js'
+import { useRouter } from 'vue-router'
 const {courses} = useCourse()
+
+const router = useRouter()
+
+
+function gotoDetail(courseId){
+    router.push({ name: 'ComCourseDetail', params: { id: courseId } })
+}
 
 </script>
